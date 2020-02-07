@@ -10,7 +10,6 @@
 
 AMyDestructiblePlatformLIfe::AMyDestructiblePlatformLIfe() {
 	PrimaryActorTick.bCanEverTick = true;
-	OnActorHit.AddDynamic(this, &ADestructiblePlatform::Collision);
 	OnActorBeginOverlap.AddDynamic(this, &ADestructiblePlatform::Overlapp);
 }
 void AMyDestructiblePlatformLIfe::Collision2(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)

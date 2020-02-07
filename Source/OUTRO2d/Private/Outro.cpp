@@ -116,7 +116,7 @@ void AOutro::Direita(float Eixo)
 	}
 	//moves the character to the left or to the right depending of the input received
 	FVector location = GetActorLocation();
-	location.Y += Eixo*10;
+	location.Y += Eixo*20;
 	SetActorLocation(location);
 	
 }
@@ -254,7 +254,7 @@ void AOutro::Dashing()
 		{
 			LaunchCharacter(FVector(0.0f, 2.0f, 0.0f) * -600, false, true);
 			bCanDash = false;
-			GetWorldTimerManager().SetTimer(Dash, this, &AOutro::FazerDash, 3.f, false);
+			GetWorldTimerManager().SetTimer(Dash, this, &AOutro::FazerDash, 2.f, false);
 		}
 	}
 }

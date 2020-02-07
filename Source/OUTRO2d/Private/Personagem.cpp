@@ -55,9 +55,7 @@ APersonagem::APersonagem()
 	flipBook->BodyInstance.bLockXTranslation = true;
 	flipBook->BodyInstance.bLockRotation = true;
 	
-	
-	Capsula2->OnComponentBeginOverlap.AddDynamic(this, &APersonagem::Collision);
-	Capsula2->OnComponentHit.AddDynamic(this, &APersonagem::BodyCollision);
+
 
 
 }
